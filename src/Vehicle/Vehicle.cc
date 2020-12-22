@@ -4340,14 +4340,14 @@ void Vehicle::_writeJsonLine()
         QString jsonFactValue;
 
         jsonFactValue = "{\r\n";
-        jsonFactValue.append("\t\"Model\": " + Model + ",\r\n");
-        jsonFactValue.append("\t\"Type\": " + Type + ",\r\n");
-        jsonFactValue.append("\t\"SerialNumber\": " + SN + ",\r\n");
+        jsonFactValue.append("\t\"Model\": \"" + Model + "\",\r\n");
+        jsonFactValue.append("\t\"Type\": \"" + Type + "\",\r\n");
+        jsonFactValue.append("\t\"SerialNumber\": \"" + SN + "\",\r\n");
         jsonFactValue.append("\t\"Start Time\": " + StartTime + ",\r\n");
         jsonFactValue.append("\t\"Start Lat\": " + StartLat + ",\r\n");
         jsonFactValue.append("\t\"Start Long\": " + StartLong + ",\r\n");
         jsonFactValue.append("\t\"Start AMSL\": " + StartAltAMSL + ",\r\n");
-        jsonFactValue.append("\t\"Interval\": " + Interval + ",\r\n");
+        jsonFactValue.append("\t\"Interval\": \"" + Interval + "\",\r\n");
         jsonFactValue.append("\t\"Seq\": " + QString::number(Seq)+ ",\r\n");
         jsonFactValue.append("\t\"DateTime\": \"" + dataTime + "\",\r\n");
         jsonFactValue.append("\t\"Lat\": " + Lat + ",\r\n");
@@ -4365,9 +4365,9 @@ void Vehicle::_writeJsonLine()
         jsonFactValue.append("\t\"Yaw\": " + Yaw + ",\r\n");
         jsonFactValue.append("\t\"Voltage\": " + Voltage + ",\r\n");
         jsonFactValue.append("\t\"BattPercent\": " + BatteryPercent + ",\r\n");
-        jsonFactValue.append("\t\"Hovering\": " + Hovering + ",\r\n");
-        jsonFactValue.append("\t\"Transtats\": " + Transtats + ",\r\n");
-        jsonFactValue.append("\t\"Flystats\": " + Flystats + "\r\n");
+        jsonFactValue.append("\t\"Hovering\": \"" + Hovering + "\",\r\n");
+        jsonFactValue.append("\t\"Transtats\": \"" + Transtats + "\",\r\n");
+        jsonFactValue.append("\t\"Flystats\": \"" + Flystats + "\"\r\n");
         jsonFactValue.append("}\r\n");
 
 //        sensorDataObject.insert("Seq",QJsonValue::fromVariant(Seq));
