@@ -1,0 +1,37 @@
+[
+{
+    "name":             "sensorTemp",
+    "shortDescription": "Sensor Temp",
+    "type":             "double",
+    "decimalPlaces":    2,
+    "units":            "'C"
+},
+{
+    "name":             "sensorHumi",
+    "shortDescription": "Sensor Humi",
+    "type":             "double",
+    "decimalPlaces":    2,
+    "units":            "%"
+},
+{
+    "name":             "sensorBaro",
+    "shortDescription": "Sensor Baro",
+    "type":             "double",
+    "decimalPlaces":    2,
+    "units":            "hPa"
+},
+{
+    "name":             "sensorWindDir",
+    "shortDescription": "Sensor WindDir",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "deg"
+},
+{
+    "name":             "sensorWindSpd",
+    "shortDescription": "Sensor WindSpd",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "m/s"
+}
+]
