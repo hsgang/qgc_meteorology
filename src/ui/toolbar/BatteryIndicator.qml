@@ -102,6 +102,7 @@ Item {
         anchors.bottom: parent.bottom
         opacity:        (activeVehicle && activeVehicle.battery.voltage.value >= 0) ? 1 : 0.5
         QGCColoredImage {
+            id:                 batteryIcon
             anchors.top:        parent.top
             anchors.bottom:     parent.bottom
             width:              height
@@ -116,6 +117,15 @@ Item {
             color:                  getBatteryColor()
             anchors.verticalCenter: parent.verticalCenter
         }
+        QGCLabel {
+            text:                   (activeVehicle && activeVehicle.battery.voltage.value !== -1) ? (activeVehicle.battery.voltage.valueString + " " + activeVehicle.battery.voltage.units) : "N/A"
+            font.pointSize:         ScreenTools.smallFontPointSize
+            color:                  getBatteryColor()
+            anchors.verticalCenter: parent.verticalCenter
+        }
+
+
+
     }
     MouseArea {
         anchors.fill:   parent
